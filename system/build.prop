@@ -73,7 +73,7 @@ ro.hwui.fbo_cache_size=16
 #
 
 # LCD Density
-ro.sf.lcd_density=480
+ro.sf.lcd_density=320
 
 # Evolution RIL (8xxx)
 rild.libpath=/system/lib/libsec-ril.so
