@@ -1,0 +1,8 @@
+<?xml  version="1.0" encoding="UTF-8" ?>
+<SamsungMobileFeauture>
+  <Version>ED001</Version>
+  <FeatureSet>
+    <CscFeature_Camera_CameraFlicker>60hz</CscFeature_Camera_CameraFlicker>
+	<CscFeature_Wifi_SupportNotificationMenu>TRUE</CscFeature_Wifi_SupportNotificationMenu>
+  </FeatureSet>
+</SamsungMobileFeauture>

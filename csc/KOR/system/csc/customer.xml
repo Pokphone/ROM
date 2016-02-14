@@ -1,0 +1,182 @@
+﻿<?xml  version="1.0" encoding="UTF-8" ?>
+
+
+<CustomerData>
+
+
+  <GeneralInfo>
+
+
+    <CSCEdition>ED001</CSCEdition>
+
+
+    <Country>Korea</Country>
+
+
+    <SalesCode>KOR</SalesCode>
+
+
+    <NbNetworkInfo>1</NbNetworkInfo>
+
+
+    <NetworkInfo>
+
+
+      <MCCMNC>45001</MCCMNC>
+
+
+      <NetworkName>SEC Test</NetworkName>
+
+
+    </NetworkInfo>
+
+
+  </GeneralInfo>
+
+
+  <Settings>
+
+
+    <Main>
+
+
+      <Phone>
+
+
+        <DefLanguage>automatic</DefLanguage>
+
+
+        <DefLanguageNoSIM>english</DefLanguageNoSIM>
+
+
+      </Phone>
+
+
+      <Network>
+
+
+        <AutoProfile>on</AutoProfile>
+
+
+        <AutoVoicemail>off</AutoVoicemail>
+
+
+        <AutoEmailAccount>off</AutoEmailAccount>
+
+
+        <AutoBookmark>off</AutoBookmark>
+
+
+        <AutoLink>off</AutoLink>
+
+
+        <AutoSyncML>off</AutoSyncML>
+
+
+      </Network>
+
+
+      <Security />
+
+
+    </Main>
+
+
+    <Messages>
+
+
+      <SMS>
+
+
+        <ReplyPath>off</ReplyPath>
+
+
+        <DeliveryReport>off</DeliveryReport>
+
+
+        <CharSupport>automatic</CharSupport>
+
+
+      </SMS>
+
+
+      <MMS>
+
+
+        <MmsSending>
+
+
+          <ReqDeliveryRep>off</ReqDeliveryRep>
+
+
+          <ReqReadRep>off</ReqReadRep>
+
+
+          <CreationMode>free</CreationMode>
+
+
+        </MmsSending>
+
+
+        <MmsReceiving>
+
+
+          <Home>auto</Home>
+
+
+          <Roaming>manual</Roaming>
+
+
+        </MmsReceiving>
+
+
+      </MMS>
+
+      <Email>
+      	  <Combinded>0</Combinded>
+      </Email>
+
+    </Messages>
+    <Browser>
+      <NbQuickAccess>7</NbQuickAccess>
+      <QuickAccess>
+        <Index>1</Index>
+        <QATitle>Google</QATitle>
+        <QAURL>http://www.google.co.kr/</QAURL>
+      </QuickAccess>
+      <QuickAccess>
+        <Index>2</Index>
+        <QATitle>네이버</QATitle>
+        <QAURL>http://m.naver.com/?ref=sm/</QAURL>
+      </QuickAccess>
+      <QuickAccess>
+        <Index>3</Index>
+        <QATitle>다음</QATitle>
+        <QAURL>http://m.daum.net/?nil_pjt=samsungs&amp;nil_unit=shortcut&amp;nil_service=mtop/</QAURL>
+      </QuickAccess>
+      <QuickAccess>
+        <Index>4</Index>
+        <QATitle>Gmarket</QATitle>
+        <QAURL>http://mobile.gmarket.co.kr//?jaehuid=200005341/</QAURL>
+      </QuickAccess>
+      <QuickAccess>
+        <Index>5</Index>
+        <QATitle>허핑턴포스트코리아</QATitle>
+        <QAURL>http://m.huffpost.com/kr/?ncid=txtlnkusaolp00000627/</QAURL>
+      </QuickAccess>
+      <QuickAccess>
+        <Index>6</Index>
+        <QATitle>YouTube</QATitle>
+        <QAURL>http://m.youtube.com/</QAURL>
+      </QuickAccess>
+      <QuickAccess>
+        <Index>7</Index>
+        <QATitle>KBS</QATitle>
+        <QAURL>http://m.kbs.co.kr/</QAURL>
+      </QuickAccess>
+    </Browser>
+
+  </Settings>
+
+
+</CustomerData>

@@ -1,0 +1,18 @@
+<?xml  version="1.0" encoding="UTF-8" ?>
+<SW-Configuration>
+	<MobileData>
+	<PublicName>SM-G900F</PublicName>
+	</MobileData>
+	<CustomerDataSet>
+	<CSCName>G900FOXA</CSCName>
+	<CSCVersion>1CPB2</CSCVersion>
+	<NbCustomer>7</NbCustomer>
+	<CustomerData src="/Customer/CPW/customer.xml" />
+	<CustomerData src="/Customer/DBT/customer.xml" />
+	<CustomerData src="/Customer/ITV/customer.xml" />
+	<CustomerData src="/Customer/KOR/customer.xml" />
+	<CustomerData src="/Customer/XEO/customer.xml" />
+	<CustomerData src="/Customer/XEF/customer.xml" />
+	<CustomerData src="/Customer/BTU/customer.xml" />
+	</CustomerDataSet>
+</SW-Configuration>
