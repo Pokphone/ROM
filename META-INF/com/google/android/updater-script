@@ -77,16 +77,13 @@ symlink("grep", "/system/bin/fgrep");
 symlink("libGLESv2.so", "/system/lib/libGLESv3.so");
 symlink("Roboto-Bold.ttf", "/system/fonts/DroidSans-Bold.ttf");
 symlink("Roboto-Regular.ttf", "/system/fonts/DroidSans.ttf");
-symlink("/system/csc/BTU/csc_contents", "/system/csc_contents");
 symlink("/system/lib/libapa_jni.so", "/system/app/SapaMonitor/lib/arm/libapa_jni.so");
 symlink("/system/lib/libatomcore.so", "/system/priv-app/SelectiveFocusViewer/lib/arm/libatomcore.so");
 symlink("/system/lib/libatomjpeg.so", "/system/priv-app/SelectiveFocusViewer/lib/arm/libatomjpeg.so");
 symlink("/system/lib/libbluetooth_jni.so", "/system/app/Bluetooth/lib/arm/libbluetooth_jni.so");
 symlink("/system/lib/libcommonpawrapper.so", "/system/app/RootPA/lib/arm/libcommonpawrapper.so");
-symlink("/system/lib/libdefcontainer_jni.so", "/system/priv-app/DefaultContainerService/lib/arm/libdefcontainer_jni.so");
 symlink("/system/lib/libjni_emailencryption.so", "/system/app/SecEmail_K/lib/arm/libjni_emailencryption.so");
 symlink("/system/lib/libjni_pacprocessor.so", "/system/app/PacProcessor/lib/arm/libjni_pacprocessor.so");
-symlink("/system/lib/libnfc_nci_jni.so", "/system/app/NfcNci/lib/arm/libnfc_nci_jni.so");
 symlink("/system/lib/libprintspooler_jni6.so", "/system/app/SPrintSpooler6/lib/arm/libprintspooler_jni6.so");
 symlink("/system/lib/libSecFileClientUnit.so", "/system/priv-app/SamsungLinkPlatform/lib/arm/libSecFileClientUnit.so");
 symlink("/system/lib/libsecipx.so", "/system/priv-app/SelectiveFocusViewer/lib/arm/libsecipx.so");
@@ -236,6 +233,11 @@ symlink("toybox", "/system/bin/which");
 symlink("toybox", "/system/bin/whoami");
 symlink("toybox", "/system/bin/xargs");
 symlink("toybox", "/system/bin/yes");
+
+##### Removed #####
+#symlink("/system/lib/libnfc_nci_jni.so", "/system/app/NfcNci/lib/arm/libnfc_nci_jni.so");
+#symlink("/system/lib/libdefcontainer_jni.so", "/system/priv-app/DefaultContainerService/lib/arm/libdefcontainer_jni.so");
+###################
 
 ui_print("Setting Permissions...");
 set_metadata_recursive("/system", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "capabilities", 0x0, "selabel", "u:object_r:system_file:s0");
