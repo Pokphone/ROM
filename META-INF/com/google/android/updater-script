@@ -42,13 +42,13 @@ else
   ui_print("");
 endif;
 
-if getprop("ro.product.device") == "ms01lte"
-  then
-  ui_print(" - flashing Grand2 kernel");
-  package_extract_file("ms01lte/boot.img", "/dev/block/platform/msm_sdcc.1/by-name/boot");
-else
-  ui_print("");
-endif;
+#if getprop("ro.product.device") == "ms01lte"
+#  then
+#  ui_print(" - flashing Grand2 kernel");
+#  package_extract_file("ms01lte/boot.img", "/dev/block/platform/msm_sdcc.1/by-name/boot");
+#else
+#  ui_print("");
+#endif;
 
 if getprop("ro.product.device") == "ms01ltektt"
   then
