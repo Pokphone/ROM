@@ -35,10 +35,10 @@ uicc_insert()
     "msm8610"|"msm8916")
         insmod /system/lib/modules/ice40-hcd.ko
         ;;
-    "msm8226")
+    "msm8974")
         echo 1 > /sys/bus/platform/devices/msm_smsc_hub/enable
         ;;
-    "msm8974")
+    "msm8226")
         echo msm_ehci_host > /sys/bus/platform/drivers/msm_ehci_host/bind
         ;;
     *)
@@ -53,10 +53,10 @@ uicc_remove()
     "msm8610"|"msm8916")
         rmmod /system/lib/modules/ice40-hcd.ko
         ;;
-    "msm8226")
+    "msm8974")
         echo 0 > /sys/bus/platform/devices/msm_smsc_hub/enable
         ;;
-    "msm8974")
+    "msm8226")
         echo msm_ehci_host > /sys/bus/platform/drivers/msm_ehci_host/unbind
         ;;
     *)

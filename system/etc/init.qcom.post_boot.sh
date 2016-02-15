@@ -244,7 +244,7 @@ case "$target" in
 esac
 
 case "$target" in
-    "msm8974")
+    "msm8226")
         # Permissions for Camera to flush cache buffers
         chown -h system.system /sys/devices/virtual/sec/sec_misc/drop_caches
         echo 4 > /sys/module/lpm_levels/enable_low_power/l2
@@ -609,7 +609,7 @@ case "$target" in
 esac
 
 case "$target" in
-    "msm8226")
+    "msm8974")
         echo 4 > /sys/module/lpm_levels/enable_low_power/l2
         echo 1 > /sys/module/msm_pm/modes/cpu0/power_collapse/suspend_enabled
         echo 1 > /sys/module/msm_pm/modes/cpu1/power_collapse/suspend_enabled
@@ -794,10 +794,10 @@ esac
 
 # Post-setup services
 case "$target" in
-    "msm8660" | "msm8960" | "msm8226" | "msm8610")
+    "msm8660" | "msm8960" | "msm8974" | "msm8610")
         start mpdecision
     ;;
-    "msm8974")
+    "msm8226")
         rm /data/system/perfd/default_values
         start mpdecision
         echo 512 > /sys/block/mmcblk0/bdi/read_ahead_kb
@@ -870,7 +870,7 @@ case "$target" in
 esac
 
 case "$target" in
-    "msm8226" | "msm8974" | "msm8610" | "apq8084" | "mpq8092" | "msm8610")
+    "msm8974" | "msm8226" | "msm8610" | "apq8084" | "mpq8092" | "msm8610")
         # Let kernel know our image version/variant/crm_version
         image_version="10:"
         image_version+=`getprop ro.build.id`

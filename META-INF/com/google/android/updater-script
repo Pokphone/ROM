@@ -243,6 +243,7 @@ set_metadata_recursive("/system", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 06
 set_metadata_recursive("/system/bin", "uid", 0, "gid", 2000, "dmode", 0755, "fmode", 0755, "capabilities", 0x0, "selabel", "u:object_r:system_file:s0");
 set_metadata("/system/bin/ATFWD-daemon", "uid", 0, "gid", 2000, "mode", 0755, "capabilities", 0x0, "selabel", "u:object_r:atfwd_exec:s0");
 set_metadata("/system/bin/adsprpcd", "uid", 0, "gid", 2000, "mode", 0755, "capabilities", 0x0, "selabel", "u:object_r:adsprpcd_exec:s0");
+set_metadata("/system/bin/audiod", "uid", 0, "gid", 2000, "mode", 0755, "capabilities", 0x0, "selabel", "u:object_r:audiod_exec:s0");
 set_metadata("/system/bin/androidshmservice", "uid", 0, "gid", 2000, "mode", 0755, "capabilities", 0x0, "selabel", "u:object_r:androidshmservice_exec:s0");
 set_metadata("/system/bin/apaservice", "uid", 0, "gid", 2000, "mode", 0755, "capabilities", 0x0, "selabel", "u:object_r:apaservice_exec:s0");
 set_metadata("/system/bin/app_process", "uid", 0, "gid", 2000, "mode", 0755, "capabilities", 0x0, "selabel", "u:object_r:zygote_exec:s0");
@@ -266,7 +267,9 @@ set_metadata("/system/bin/dumpstate", "uid", 0, "gid", 2000, "mode", 0755, "capa
 set_metadata("/system/bin/dumpsys", "uid", 0, "gid", 2000, "mode", 0755, "capabilities", 0x0, "selabel", "u:object_r:dumpsys_exec:s0");
 set_metadata("/system/bin/edmaudit", "uid", 0, "gid", 2000, "mode", 0755, "capabilities", 0x0, "selabel", "u:object_r:edmaudit_exec:s0");
 set_metadata("/system/bin/efsks", "uid", 0, "gid", 2000, "mode", 0755, "capabilities", 0x0, "selabel", "u:object_r:efsks_exec:s0");
+set_metadata("/system/bin/epmlogd", "uid", 0, "gid", 2000, "mode", 0755, "capabilities", 0x0, "selabel", "u:object_r:epmlogd_exec:s0");
 set_metadata("/system/bin/hostapd", "uid", 0, "gid", 2000, "mode", 0755, "capabilities", 0x0, "selabel", "u:object_r:hostapd_exec:s0");
+set_metadata("/system/bin/gatekeeperd", "uid", 0, "gid", 2000, "mode", 0755, "capabilities", 0x0, "selabel", "u:object_r:gatekeeperd_exec:s0");
 set_metadata("/system/bin/icd", "uid", 0, "gid", 2000, "mode", 0755, "capabilities", 0x0, "selabel", "u:object_r:icd_exec:s0");
 set_metadata("/system/bin/installd", "uid", 0, "gid", 2000, "mode", 0755, "capabilities", 0x0, "selabel", "u:object_r:installd_exec:s0");
 set_metadata("/system/bin/insthk", "uid", 0, "gid", 2000, "mode", 0755, "capabilities", 0x0, "selabel", "u:object_r:insthk_exec:s0");
@@ -313,6 +316,10 @@ set_metadata("/system/bin/vcsFPService", "uid", 0, "gid", 2000, "mode", 0755, "c
 set_metadata("/system/bin/vold", "uid", 0, "gid", 2000, "mode", 0755, "capabilities", 0x0, "selabel", "u:object_r:vold_exec:s0");
 set_metadata("/system/bin/wcnss_service", "uid", 0, "gid", 2000, "mode", 0755, "capabilities", 0x0, "selabel", "u:object_r:wcnss_service_exec:s0");
 set_metadata("/system/bin/wpa_supplicant", "uid", 0, "gid", 2000, "mode", 0755, "capabilities", 0x0, "selabel", "u:object_r:wpa_exec:s0");
+set_metadata("/system/bin/sdp_cryptod_exec", "uid", 0, "gid", 2000, "mode", 0755, "capabilities", 0x0, "selabel", "u:object_r:sdp_cryptod_exec:s0");
+set_metadata("/system/bin/tbaseLoader", "uid", 0, "gid", 2000, "mode", 0755, "capabilities", 0x0, "selabel", "u:object_r:tbaseLoader_exec:s0");
+set_metadata("/system/bin/macloader", "uid", 0, "gid", 2000, "mode", 0755, "capabilities", 0x0, "selabel", "u:object_r:macloader_exec:s0");
+set_metadata("/system/bin/irsc_util", "uid", 0, "gid", 2000, "mode", 0755, "capabilities", 0x0, "selabel", "u:object_r:irsc_util_exec:s0");
 set_metadata("/system/etc/init.qcom.sdio.sh", "uid", 0, "gid", 1000, "mode", 0550, "capabilities", 0x0, "selabel", "u:object_r:system_file:s0");
 set_metadata_recursive("/system/etc/bluetooth", "uid", 1002, "gid", 1002, "dmode", 0755, "fmode", 0440, "capabilities", 0x0, "selabel", "u:object_r:system_file:s0");
 set_metadata("/system/etc/bluetooth/auto_pair_devlist.conf", "uid", 0, "gid", 0, "mode", 0644, "capabilities", 0x0, "selabel", "u:object_r:system_file:s0");
@@ -324,6 +331,7 @@ set_metadata_recursive("/system/etc/ppp", "uid", 0, "gid", 0, "dmode", 0755, "fm
 set_metadata_recursive("/system/lib", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "capabilities", 0x0, "selabel", "u:object_r:system_library_file:s0");
 set_metadata_recursive("/system/vendor", "uid", 0, "gid", 2000, "dmode", 0755, "fmode", 0644, "capabilities", 0x0, "selabel", "u:object_r:system_file:s0");
 set_metadata_recursive("/system/vendor/bin", "uid", 0, "gid", 2000, "dmode", 0755, "fmode", 0755, "capabilities", 0x0, "selabel", "u:object_r:system_file:s0");
+set_metadata("/system/vendor/bin/thermal-engine", "uid", 0, "gid", 2000, "mode", 0755, "capabilities", 0x0, "selabel", "u:object_r:thermal-engine_exec:s0");
 set_metadata("/system/vendor/firmware", "uid", 0, "gid", 2000, "mode", 0755, "capabilities", 0x0, "selabel", "u:object_r:system_file:s0");
 set_metadata("/system/vendor/lib", "uid", 0, "gid", 2000, "mode", 0755, "capabilities", 0x0, "selabel", "u:object_r:system_file:s0");
 set_metadata("/system/vendor/lib/egl", "uid", 0, "gid", 2000, "mode", 0755, "capabilities", 0x0, "selabel", "u:object_r:system_file:s0");
