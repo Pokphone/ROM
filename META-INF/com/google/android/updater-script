@@ -11,6 +11,7 @@ ui_print("****************************************");
 ui_print("********   By the MotionTeam    ********");
 ui_print("****************************************");
 ui_print("");
+ui_print("CAF version is LA.BF.1.1.3-00910-8x74.0");
 ui_print("");
 ui_print("- MotionTeam Devs");
 ui_print("aapav01");
@@ -38,6 +39,7 @@ if getprop("ro.product.device") == "ms013g"
   then
   ui_print(" - flashing Grand2 kernel");
   package_extract_file("ms013g/boot.img", "/dev/block/platform/msm_sdcc.1/by-name/boot");
+  package_extract_dir("ms013g/system", "/system");
 else
   ui_print("");
 endif;
