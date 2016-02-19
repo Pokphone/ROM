@@ -4,7 +4,7 @@ ui_print("********                        ********");
 ui_print("********  Motion ROM MM 6.0.1   ********");
 ui_print("********                        ********");
 ui_print("****************************************");
-ui_print("********         v20.0          ********");
+ui_print("********         v20.1          ********");
 ui_print("****************************************");
 ui_print("********     FULL S5 MM PORT    ********");
 ui_print("****************************************");
@@ -26,7 +26,7 @@ ui_print("Format /system ...");
 show_progress(0.500000, 0);
 delete_recursive("/system");
 show_progress(1.0, 3296);
-ui_print("Installing Motion ROM v20.0...");
+ui_print("Installing Motion ROM v20.1...");
 ui_print("");
 package_extract_dir("system", "/system");
 
